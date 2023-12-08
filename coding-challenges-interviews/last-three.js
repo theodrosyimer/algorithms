@@ -32,7 +32,7 @@ const example = {
 
 // using `while` loop
 // source: https://twitter.com/antichrist65535/status/1600446347844366337/photo/1
-const lastThree3 = example => {
+const lastThree3 = (example) => {
   let x
   let y
   let z
@@ -58,10 +58,10 @@ console.log(lastThree4(example))
 // Using an Array
 
 // first attempt: using recursion
-const lastThree = example => {
+const lastThree = (example) => {
   const result = []
 
-  const getNextValue = obj => {
+  const getNextValue = (obj) => {
     if (obj.next === null) {
       result.push(obj.data)
       return
@@ -77,7 +77,7 @@ const lastThree = example => {
 console.log(lastThree(example))
 
 // using a `while` loop
-const lastThree2 = example => {
+const lastThree2 = (example) => {
   const result = []
 
   let current = example
