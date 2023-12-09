@@ -32,7 +32,7 @@ function binarySearch3(arr, elem) {
   let right = arr.length - 1
 
   while (left <= right) {
-    middle = Math.floor((left + right) / 2)
+    let middle = Math.floor((left + right) / 2)
     if (arr[middle] === elem) return middle
 
     if (arr[middle] < elem) {
