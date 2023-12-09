@@ -1,15 +1,15 @@
-function naiveSearch(long, short) {
+function naiveSearch(string, query) {
   let count = 0
-  for (let i = 0; i < long.length; i++) {
-    for (let j = 0; j < short.length; j++) {
-      if (short[j] !== long[i + j]) break
-      if (j === short.length - 1) count++
+  for (let i = 0; i < string.length; i++) {
+    for (let j = 0; j < query.length; j++) {
+      if (query[j] !== string[i + j]) break
+      if (j === query.length - 1) count++
     }
   }
   return count
 }
 
-naiveSearch('lorie loled', 'lol') // ?
+naiveSearch('lorie loled', 'ed') // ?
 
 // const str1 = 'am'
 // const str2 = 'i am am string'
@@ -54,6 +54,6 @@ naiveSearch('lorie loled', 'lol') // ?
 //     }
 //   }
 //   return count
-}
+// }
 
-stringSearch(str1, str2) // ?
+// stringSearch(str1, str2) // ?
