@@ -24,7 +24,7 @@ type Card = `${CardValue} of ${Suit}`
 type Deck = Card[]
 
 // TODO: use a set instead of an array to be sure that there are no duplicates
-const deck: Deck = [
+const deck = [
   'Ace of Hearts',
   'Two of Hearts',
   'Three of Hearts',
@@ -176,10 +176,11 @@ function shuffle() {
   return shuffledDeck
 }
 
-console.log('Shuffled Deck:', shuffle())
-console.log('Shuffled Deck Length:', shuffle().length)
-console.log(new Set(shuffle()))
-console.log(new Set(shuffle()).size)
+const shuffledDeck = shuffle()
+console.log('Shuffled Deck:', shuffledDeck)
+console.log('Shuffled Deck Length:', shuffledDeck.length)
+console.log(new Set(shuffledDeck))
+console.log(new Set(shuffledDeck).size)
 
 function get(card: Card) {
   return deckMatrix[card]
