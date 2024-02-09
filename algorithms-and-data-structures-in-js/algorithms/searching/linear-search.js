@@ -1,5 +1,5 @@
 /**
- * @param {number[]} array
+ * @param {number[]} numbers
  * @param {number} value
  * @returns {number}
  *
