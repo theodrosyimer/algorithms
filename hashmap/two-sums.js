@@ -29,19 +29,19 @@ function twoSumsAll(numberList, target) {
 
 const start = performance.now()
 const result = twoSumsFirstOnly([1, 2, 3, 7, 4, 11, 15, 13], 18)
-const timeExecution = performance.now() - start
+const executionTime = performance.now() - start
 
 const start2 = performance.now()
 const result2 = twoSumsAll([1, 2, 3, 7, 4, 11, 15, 13], 18)
-const timeExecution2 = performance.now() - start2
+const executionTime2 = performance.now() - start2
 
 console.table([
   {
     result,
-    timeExecution,
+    timeExecution: executionTime,
   },
   {
-    result: result2,
-    timeExecution: timeExecution2,
+    result: JSON.stringify(result2),
+    timeExecution: executionTime2,
   },
 ])
