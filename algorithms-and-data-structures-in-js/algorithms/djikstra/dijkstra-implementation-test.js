@@ -2,7 +2,7 @@
 
 const node = { S: [['A', [7, 9]], ['B', [2, 7]], ['C', [3, 8]]] }
 
-const nodeToPriorityQueueProcessor = n => {
+function nodeToPriorityQueueProcessor(n)  {
   const nodeToArr = Object.entries(n) // ?
   const pathCostToAttachedNode = nodeToArr[0][1][0][1][0] // ?
   const distanceFromE = nodeToArr[0][1][0][1][1] // ?
@@ -25,7 +25,7 @@ const PriorityQueue = []
 
 const result = []
 
-const pathCostToAllAttachedNodes = result => {
+function pathCostToAllAttachedNodes(result) {
   for (const n of result) {
     return n[pathCostToAttacheNode]
   }
