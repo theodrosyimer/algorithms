@@ -177,6 +177,7 @@ function shuffle() {
 }
 
 const shuffledDeck = shuffle()
+//              ^?
 console.log('Shuffled Deck:', shuffledDeck)
 console.log('Shuffled Deck Length:', shuffledDeck.length)
 console.log(new Set(shuffledDeck))
